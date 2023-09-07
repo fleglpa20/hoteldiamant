@@ -1,0 +1,9 @@
+.limit {
+  max-width: 1117px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.small {
+  max-width: 734px;
+}

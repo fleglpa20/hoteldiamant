@@ -1,0 +1,26 @@
+---
+
+export interface Texts {
+    heading: string;
+    subheading: string;
+    rooms: string;
+}
+
+const { heading,
+    subheading,
+    rooms} = Astro.props;
+---
+
+<main class="bg-primary">
+    <h2 class="heading2 text-secondary text-center limit">{heading}</h2>
+    <p class="paragraph text-center limit small">{subheading}</p>
+    <div class="flex">
+        <svg width="3" height="27" viewBox="0 0 3 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.38718e-07 3.17351L3 -1.31134e-07L1.11982 3.90392L1.11982 23.6502L3 27L1.06461e-06 24.3554L1.38718e-07 3.17351Z" fill="#493727"/>
+        </svg>
+        <p class="rooms limit small text-secondary">{rooms}</p>
+        <svg width="3" height="27" viewBox="0 0 3 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 3.17351L1.19209e-06 -1.31134e-07L1.88018 3.90392L1.88018 23.6502L1.18854e-08 27L3 24.3554L3 3.17351Z" fill="#493727"/>
+        </svg>
+    </div>
+</main>
