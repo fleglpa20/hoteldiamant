@@ -7,3 +7,12 @@
 .small {
   max-width: 734px;
 }
+
+#spa-img {
+  max-width: 710px;
+  height: 544px;
+}
+
+.page-container {
+  max-width: 1440px;
+}

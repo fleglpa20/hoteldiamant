@@ -1,8 +1,7 @@
  ---
 import Welcome from '../layouts/welcome.astro';
 import Layout from '../layouts/Layout.astro';
-import Menu from '../components/UI/menu.jsx';
-import Card from '../components/Card.astro';
+
 
 
 ---
@@ -10,7 +9,30 @@ import Card from '../components/Card.astro';
  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 
 <Layout>
-	<Welcome heading="Pellentesque est enim, malesuada id purus at, sodales commodo ligula malesuada sit amet felis eu venenatis.", subheading="Etiam massa orci, ultrices non felis sed, tincidunt mollis nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.", rooms="Naše pokoje">
-    </Welcome>
-
+    <main>
+        <Welcome></Welcome>
+        <div class="bg-secondary">
+            <div class="page-container">
+                <div class="flex pt-32 pl-32 space-x-3">
+                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16 4.5L8 14L0 4.5L3.2 0H12.8L16 4.5Z" fill="#BD941E"/>
+                    </svg>
+                    <p class="tag">VÍTEJTE</p>
+                </div>
+                <h2 class="heading2 text-primary pt-12 pl-32">Sed ac est sed lectus congue<br>consequat etiam quis sollicitudin</h2>
+                <img id="spa-img" class="absolute right-64" src="src/png/spa.jpg"/>
+                <p class="tag pl-64 pt-64 relative z-10">aquamarine</p>
+                <p class="heading2 pl-64 relative z-10">Wellness</p>
+                <p class="tag pl-64 pt-64">aquamarine</p>
+                <p class="heading2 pl-64">Spa centrum</p>
+                <p class="tag pl-64 pt-64">zahrajte si</p>
+                <p class="heading2 pl-64">Golf</p>
+                <p class="tag pl-64 pt-64">uspořádejte svou akci u nás</p>
+                <p class="heading2 pl-64">Firemní akce</p>
+            </div>
+        </div>
+    </main>
 </Layout>
+
+
+
