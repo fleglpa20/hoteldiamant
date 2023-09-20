@@ -24,3 +24,24 @@
   max-width: 393px;
   height: 564px;
 }
+
+.form-limit {
+  max-width: 989px;
+}
+
+.input-limit {
+  max-width: 198px;
+}
+
+.field-limit {
+  max-width: 165px;
+}
+
+.persons {
+  max-width: 133px;
+}
+
+.menu {
+  width: 46px;
+  height: 43px;
+}
