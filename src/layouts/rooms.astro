@@ -1,0 +1,43 @@
+---
+import Tag from "../components/UI/tag.astro";
+import Activity from "../components/UI/activity.astro";
+import Room from "../components/UI/room-stats.astro";
+
+interface Props {
+    heading: string;
+    text: string;
+    display: string;
+}
+
+const {heading, text, display} = Astro.props;
+---
+<div class="bg-primary">
+    <div class="page-container mx-auto">
+        <div class="flex">
+            <Tag text="POKOJE"></Tag>
+            <h2 class="heading2 text-secondary pt-24 pl-32 mb-8 limit">{heading}</h2>
+        </div>
+        <div class="flex space-x-16 mx-auto justify-center mt-10">
+            <div class="inline-block space-y-12 pt-10">
+                <Room num="70" text="LŮŽEK"></Room>
+                <Room num="34" text="LUXUSNÍCH POKOJŮ"></Room>
+                <Room num="2" text="APARTMÁ"></Room>
+            </div>
+            <div class="room-img">
+                <img src="src/png/room.png" class="object-fill"/>
+            </div>
+            <div class="inline-block space-y-8">
+                <p class="paragraph text-secondary w-96 pt-32">{text}</p>
+                <a href="#" class="flex justify-center space-x-4 pt-11 float-left link-hover">
+                    <svg width="3" height="27" viewBox="0 0 3 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.38718e-07 3.17351L3 -1.31134e-07L1.11982 3.90392L1.11982 23.6502L3 27L1.06461e-06 24.3554L1.38718e-07 3.17351Z" fill="#493727"/>
+                    </svg>
+                    <p class="rooms small text-secondary text-center">{display}</p>
+                    <svg width="3" height="27" viewBox="0 0 3 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3 3.17351L1.19209e-06 -1.31134e-07L1.88018 3.90392L1.88018 23.6502L1.18854e-08 27L3 24.3554L3 3.17351Z" fill="#493727"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

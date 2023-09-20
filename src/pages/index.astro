@@ -1,38 +1,38 @@
  ---
 import Welcome from '../layouts/welcome.astro';
+import Activity from '../layouts/activity.astro';
 import Layout from '../layouts/Layout.astro';
+import Rooms from "../layouts/rooms.astro";
+import Packages from "../layouts/packages.astro";
+import Restaurant from "../layouts/restaurant.astro";
+import Contactus from "../layouts/contactus.astro";
+import Footer from "../layouts/footer.astro";
+import Reservation from "../layouts/reservation.astro";
 
 
 
 ---
- <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
- <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
 
-<Layout>
+ <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+ <Layout>
     <main>
+        <Reservation></Reservation>
         <Welcome></Welcome>
-        <div class="bg-secondary">
-            <div class="page-container">
-                <div class="flex pt-32 pl-32 space-x-3">
-                    <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M16 4.5L8 14L0 4.5L3.2 0H12.8L16 4.5Z" fill="#BD941E"/>
-                    </svg>
-                    <p class="tag">VÍTEJTE</p>
-                </div>
-                <h2 class="heading2 text-primary pt-12 pl-32">Sed ac est sed lectus congue<br>consequat etiam quis sollicitudin</h2>
-                <img id="spa-img" class="absolute right-64" src="src/png/spa.jpg"/>
-                <p class="tag pl-64 pt-64 relative z-10">aquamarine</p>
-                <p class="heading2 pl-64 relative z-10">Wellness</p>
-                <p class="tag pl-64 pt-64">aquamarine</p>
-                <p class="heading2 pl-64">Spa centrum</p>
-                <p class="tag pl-64 pt-64">zahrajte si</p>
-                <p class="heading2 pl-64">Golf</p>
-                <p class="tag pl-64 pt-64">uspořádejte svou akci u nás</p>
-                <p class="heading2 pl-64">Firemní akce</p>
-            </div>
-        </div>
+        <Activity heading="Sed ac est sed lectus congue consequat etiam quis sollicitudin"></Activity>
+        <Rooms heading="Naše pokoje jsou moderně a stylově vybaveny s důrazem na komfort a pohodlí" text="Etiam massa orci, ultrices non felis sed, tincidunt mollis nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam vel dapibus augue. Nulla malesuada sit amet felis eu venenatis. Pellentesque est enim, malesuada id purus at, sodales commodo ligula." display="Zobrazit vše"></Rooms>
+        <Packages heading="Vyberte si některý z výhodných balíčků a užijte si pobyt plný oddychu a naprosté relaxace"></Packages>
+        <Restaurant heading="Zveme vás do naší restaurace, kde jsou všechny stoly prostřeny pro vaše zážitky" text="V nevšedním interiéru s příjemnou atmosférou můžete ochutnat vynikající mezinárodní kuchyni, doplněnou o nabídku kvalitních moravských i zahraničních vín a perfektní servis." more="Zobrazit více"></Restaurant>
+        <Contactus heading="Zvažujete pobyt u nás?" subheading="Zeptejte se na cokoliv" more="Kontaktovat"></Contactus>
+        <Footer tripadvisor="Skvělá volba!" menu1="WELLNESS" menu2="SPA CENTRUM" menu3="GOLF" menu4="FIREMNÍ AKCE" menu5="RESTAURACE" menu6="POKOJE" menu7="SPECIÁLNÍ NABÍDKY" menu8="KONFERENCE" menu9="KONTAKT" phone="+420 387 008 800" email="reception@hoteldiamant.cz" address="Sokolská 1339, 373 41 Hluboká nad Vltavou" copyright="© DIAMANT wellness hotel & Spa 2023" gdpr="Zásady ochrany osobních údajů" rules="Pravidla a podmínky" madeby="Made by Newlogic"></Footer>
+        <div id="app"></div>
+        <script type="module" src="/src/components/UI/carousel.jsx"></script>
     </main>
 </Layout>
-
-
-

@@ -1,0 +1,16 @@
+---
+import Tag from "../components/UI/tag.astro";
+import Carousel from "../components/UI/carousel";
+interface Props {
+    heading: string;
+}
+
+const {heading} = Astro.props;
+---
+<div class="bg-primary">
+    <div class="page-container mx-auto">
+        <Tag text="SPECIÁLNÍ NABÍDKY"></Tag>
+        <h2 class="heading2 text-secondary pt-12 pl-32 mb-8 limit">{heading}</h2>
+        <Carousel></Carousel>
+    </div>
+</div>

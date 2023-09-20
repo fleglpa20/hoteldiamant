@@ -1,0 +1,15 @@
+---
+interface Props {
+    src: string;
+    subheading: string;
+    heading: string;
+}
+
+const {src, subheading,heading} = Astro.props;
+---
+
+<img class="spa-img absolute right-44 mr-64 pt-32" src={src}/>
+<div>
+    <p class="tag pl-80 pt-64 relative z-10">{subheading}</p>
+    <p class="heading2 pl-80 pt-7 relative z-10">{heading}</p>
+</div>

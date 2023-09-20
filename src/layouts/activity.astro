@@ -1,0 +1,21 @@
+---
+import Activity from "../components/UI/activity.astro";
+import Tag from "../components/UI/tag.astro";
+
+interface Props {
+    heading: string;
+    }
+
+const {heading} = Astro.props;
+
+---
+<div class="bg-secondary pb-48">
+    <div class="page-container mx-auto">
+        <Tag text="VÍTEJTE"></Tag>
+        <h2 class="heading2 text-primary pt-12 pl-32 mb-8 limit">{heading}</h2>
+        <Activity src="src/png/spa.jpg" subheading="aquamarine" heading="Wellness"></Activity>
+        <Activity src="src/png/spa.jpg" subheading="aquamarine" heading="Spa centrum"></Activity>
+        <Activity src="src/png/spa.jpg" subheading="zahrajte si" heading="Golf"></Activity>
+        <Activity src="src/png/spa.jpg" subheading="uspořádejte svou akci u nás" heading="Firemní akce"></Activity>
+    </div>
+</div>

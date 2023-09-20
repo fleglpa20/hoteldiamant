@@ -1,5 +1,8 @@
 .limit {
-  max-width: 1117px;
+  max-width: 1180px;
+}
+
+.center-limit {
   margin-left: auto;
   margin-right: auto;
 }
@@ -8,11 +11,16 @@
   max-width: 734px;
 }
 
-#spa-img {
+.spa-img {
   max-width: 710px;
   height: 544px;
 }
 
 .page-container {
   max-width: 1440px;
+}
+
+.room-img {
+  max-width: 393px;
+  height: 564px;
 }

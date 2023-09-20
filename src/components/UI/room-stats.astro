@@ -1,0 +1,13 @@
+---
+interface Props {
+    num: string;
+    text: string;
+}
+
+const {num, text} = Astro.props;
+---
+
+<div>
+    <p class="heading1 text-secondary">{num}</p>
+    <p class="paragraph big text-secondary">{text}</p>
+</div>

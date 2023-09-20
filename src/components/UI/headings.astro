@@ -11,9 +11,9 @@ const { heading,
     rooms} = Astro.props;
 ---
 
-    <h2 class="heading2 text-secondary text-center limit pt-24">{heading}</h2>
-    <p class="paragraph text-center limit small pt-12">{subheading}</p>
-    <div class="flex justify-center space-x-4 pt-11">
+    <h2 class="heading2 text-secondary text-center limit center-limit pt-24">{heading}</h2>
+    <p class="paragraph text-center limit center-limit small pt-12">{subheading}</p>
+    <a href="#" class="flex justify-center space-x-4 pt-11 link-hover">
         <svg width="3" height="27" viewBox="0 0 3 27" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1.38718e-07 3.17351L3 -1.31134e-07L1.11982 3.90392L1.11982 23.6502L3 27L1.06461e-06 24.3554L1.38718e-07 3.17351Z" fill="#493727"/>
         </svg>
@@ -21,7 +21,7 @@ const { heading,
         <svg width="3" height="27" viewBox="0 0 3 27" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M3 3.17351L1.19209e-06 -1.31134e-07L1.88018 3.90392L1.88018 23.6502L1.18854e-08 27L3 24.3554L3 3.17351Z" fill="#493727"/>
         </svg>
-    </div>
+    </a>
 <svg width="200" height="422" viewBox="0 0 200 422" fill="none" xmlns="http://www.w3.org/2000/svg" class="z-10 absolute right-0 bottom-44">
     <path d="M486 124.402L243.5 421L1 124.402L75.6154 1L411.385 1L486 124.402Z" stroke="#BD941E"/>
 </svg>
