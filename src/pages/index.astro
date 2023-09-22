@@ -8,18 +8,7 @@ import Restaurant from "../layouts/restaurant.astro";
 import Contactus from "../layouts/contactus.astro";
 import Footer from "../layouts/footer.astro";
 import Reservation from "../layouts/reservation.astro";
-
-
-
 ---
-<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
-<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-<link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-/>
-
- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
  <Layout>
     <main>
@@ -31,7 +20,5 @@ import Reservation from "../layouts/reservation.astro";
         <Restaurant heading="Zveme vás do naší restaurace, kde jsou všechny stoly prostřeny pro vaše zážitky" text="V nevšedním interiéru s příjemnou atmosférou můžete ochutnat vynikající mezinárodní kuchyni, doplněnou o nabídku kvalitních moravských i zahraničních vín a perfektní servis." more="Zobrazit více"></Restaurant>
         <Contactus heading="Zvažujete pobyt u nás?" subheading="Zeptejte se na cokoliv" more="Kontaktovat"></Contactus>
         <Footer tripadvisor="Skvělá volba!" menu1="WELLNESS" menu2="SPA CENTRUM" menu3="GOLF" menu4="FIREMNÍ AKCE" menu5="RESTAURACE" menu6="POKOJE" menu7="SPECIÁLNÍ NABÍDKY" menu8="KONFERENCE" menu9="KONTAKT" phone="+420 387 008 800" email="reception@hoteldiamant.cz" address="Sokolská 1339, 373 41 Hluboká nad Vltavou" copyright="© DIAMANT wellness hotel & Spa 2023" gdpr="Zásady ochrany osobních údajů" rules="Pravidla a podmínky" madeby="Made by Newlogic"></Footer>
-        <div id="app"></div>
-        <script type="module" src="/src/components/UI/carousel.jsx"></script>
     </main>
 </Layout>
